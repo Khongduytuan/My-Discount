@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PaymentScreenActivity">
+
+    <ImageView
+        android:padding="8dp"
+        android:id="@+id/back"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:src="@drawable/ic_back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_app"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Welcome to My Discount"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/back" />
+    <LinearLayout
+        app:layout_constraintTop_toBottomOf="@id/tv_app"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/cal5"
+            android:text="Calculate 5"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_margin="8dp"
+            android:textColor="@color/white"
+            android:layout_marginHorizontal="12dp"
+            android:background="@color/yellow"
+            />
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/cal10"
+            android:text="Calculate 10"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_margin="8dp"
+            android:textColor="@color/white"
+            android:layout_marginHorizontal="12dp"
+            android:background="@color/yellow"
+            />
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/cal15"
+            android:text="Calculate 15"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_margin="8dp"
+            android:textColor="@color/white"
+            android:layout_marginHorizontal="12dp"
+            android:background="@color/yellow"
+            />
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/calSub"
+            android:text="Sub Long-Term Calculate"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_margin="8dp"
+            android:textColor="@color/white"
+            android:layout_marginHorizontal="12dp"
+            android:background="@color/yellow"
+            />
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/finish"
+            android:text="Cancel"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_margin="8dp"
+            android:textColor="@color/white"
+            android:layout_marginHorizontal="12dp"
+            android:background="@color/yellow"
+            />
+
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
